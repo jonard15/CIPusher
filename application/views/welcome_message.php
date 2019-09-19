@@ -44,7 +44,7 @@
 
     var channel = pusher.subscribe('ci_pusher');
     channel.bind('my-event', function(data) {
-      $('#message').append('<div' +data.message+ '</div>');
+      $('#message').append('<div>' +data.message+ '</div>');
     });
 	</script>
 </body>
